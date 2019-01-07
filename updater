@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 branch="develop.blake"
 
 if [ -z $1 ]
@@ -10,13 +11,27 @@ fi
 read -p "Enter Commit Message: " message
 printf "Will commit with the following message:\n$message\n"
 read -p "Push to origin.$branch?[Y/N]: " res
+=======
+read -p "Enter Commit Message: " message
+echo "$message"
+directory="develop.blake"
+read -p "Push to origin.$directory?[Y/N]: " res
+echo "$res"
+>>>>>>> b60fb0d672570477818e301a1cc17767a57bd09a
 case $res in
 	y | Y)
 		echo "okay... pushing..."
 		eval "git add ."
 		eval "git commit -m $message"
+<<<<<<< HEAD
 		eval "git push origin $branch";;
 	n | N) echo "okay... will not push";;
 esac
 
 
+=======
+		eval "git push origin $directory";;
+	n | N) echo "okay... will not push";;
+esac
+
+>>>>>>> b60fb0d672570477818e301a1cc17767a57bd09a

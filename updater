@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Enter Commit Message: " message
 echo "$message"
 directory="develop.blake"

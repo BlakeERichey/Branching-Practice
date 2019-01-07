@@ -1,0 +1,14 @@
+read -p "Enter Commit Message: " message
+echo "$message"
+directory="develop.blake"
+read -p "Push to origin.$directory?[Y/N]: " res
+echo "$res"
+case $res in
+	y | Y)
+		echo "okay... pushing..."
+		eval "git add ."
+		eval "git commit -m $message"
+		eval "git push origin $directory";;
+	n | N) echo "okay... will not push";;
+esac
+

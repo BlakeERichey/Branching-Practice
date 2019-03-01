@@ -19,9 +19,9 @@ This is an example of that
 
 ---
 
-** THIS IS BOLDED **
+**THIS IS BOLDED**
 
-* THIS IS ITALIC *
+*THIS IS ITALIC*
 
 ---
 
@@ -50,3 +50,9 @@ And Numbered List:
 1. First Item
 2. Second Item
 3. Third Item
+
+---
+
+Another useful feature: Links
+
+[Here are additional notes how README markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
